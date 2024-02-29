@@ -1,0 +1,59 @@
+Q1 - What is a Constructor in java ?
+
+ANS - In Java, a constructor is a special type of method that is automatically called when an instance (object) of a class is created. The purpose of a constructor is to initialize the newly created object.
+
+Q2 - What is Constructor chaining ?
+
+ANS - 
+Constructor chaining in Java refers to the process of one constructor calling another constructor within the same class or within its superclass. This allows for code reuse and helps in avoiding duplication of initialization code.
+
+Q3 - Can we call a subclass constructor from a  superclass Constructor ?
+
+ANS - In Java, a superclass constructor cannot directly call a subclass constructor. This is because constructors are called in a hierarchical order, starting from the topmost superclass down to the subclass being instantiated.
+
+However, a subclass constructor implicitly calls its superclass's no-argument constructor (i.e., the default constructor) if the subclass constructor doesn't explicitly call another superclass constructor using the super() keyword. This is done automatically by the Java compiler if you don't explicitly call super() or another superclass constructor as the first statement in the subclass constructor.
+
+Q4 - What happens when you keep return type to your constructor ?
+
+ANS - In Java, constructors do not have return types, including void. Constructors are special methods used for initializing objects and do not return any value, not even void. If you attempt to specify a return type for a constructor, you'll encounter a compilation error.
+
+Q5 - What is no-arg constructor ?
+
+ANS - A no-argument constructor, often called a "no-arg constructor" or "default constructor," is a constructor within a class that does not take any parameters. It is a constructor that doesn't require any arguments to be passed when creating an instance of the class.
+
+Q6 - How is no-arg constructor different from the default constructor ?
+
+ANS -  
+In Java, a "no-arg constructor" and a "default constructor" are often used interchangeably, but there's a subtle difference in their meanings:
+
+No-arg Constructor:
+
+ * A no-arg constructor is a constructor that takes no arguments. It can be explicitly defined within a class to initialize an object without requiring any parameters.
+
+Default Constructor:
+
+ * A default constructor is a no-arg constructor that is automatically provided by the Java compiler if no other constructors are explicitly defined within a class.
+ * It's automatically generated only if there are no constructors defined within the class.
+
+Q7 - Why do we need Constructor Overloading ?
+
+ANS - Constructor overloading, like method overloading, provides flexibility and convenience in object initialization. Here are several reasons why constructor overloading is useful:
+
+ * Multiple Initialization Options: Constructor overloading allows you to create objects with different initial states. Each overloaded constructor can accept different parameters, enabling the creation of objects with various configurations.
+
+ * Default Values: Overloaded constructors can provide default values for parameters. This allows users to create objects without specifying all parameters explicitly, making object creation more convenient.
+
+ * Code Reusability: By overloading constructors, you can reuse initialization logic across different constructor implementations. This avoids duplication of code and promotes maintainability.
+
+ * Enhanced Flexibility: Constructor overloading provides flexibility in how objects are initialized. Users can choose the constructor that best suits their needs based on the parameters they provide.
+
+ * Promotes Readability: Overloading constructors with meaningful parameter names can enhance code readability. Each constructor can have a distinct name indicating its purpose or the combination of parameters it accepts.
+
+Q8 - What is Default Constructor explain with a example.
+
+ANS - 
+A default constructor is a constructor that is automatically provided by the Java compiler if no other constructors are explicitly defined within a class. It's a special type of constructor that takes no arguments (i.e., it's a no-argument constructor) and initializes the object to a default state.
+
+EXAMPLE - 
+File is attached below - (Car.java)
+
